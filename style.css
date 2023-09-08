@@ -49,5 +49,9 @@ body{
     object-fit: cover;
     object-position: center;
     margin: 1px;
+    
+}
+.img-select .active{
+  border: 1px solid rgb(10, 10, 10);
 }
 
