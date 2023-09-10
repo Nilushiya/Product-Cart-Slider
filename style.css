@@ -30,7 +30,7 @@ body{
 
 /*card left*/
 .card-left{
-    width: 311px;
+    width:311px;
     overflow: hidden;
   }
   .main-image{
@@ -163,4 +163,5 @@ height: 30px;
   color:white;
   background-color: #FF8401;
   font-size: 16px;
+  cursor: pointer;
 }

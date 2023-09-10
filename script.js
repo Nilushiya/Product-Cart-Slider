@@ -47,3 +47,27 @@ stars.forEach((star,index)=>{
 })
 
 
+//Qty increase decrease 
+const minusBtn = document.querySelector(".minus")
+const plusBtn = document.querySelector(".plus")
+const qtyTxt = document.querySelector("#qty")
+
+minusBtn.addEventListener("click",(e) => {
+  e.preventDefault();
+  let qty = Number(qtyTxt.value)
+  //console.log(qty)
+  if(qty > 1){
+    qty--;
+    qtyTxt.value = qty;
+  }
+})
+
+plusBtn.addEventListener("click",(e) => {
+  e.preventDefault();
+  let qty = Number(qtyTxt.value)
+  //console.log(qty)
+  if(qty > 0 && qty < 5){
+    qty++;
+    qtyTxt.value = qty;
+}
+})
