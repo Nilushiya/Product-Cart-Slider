@@ -1,10 +1,9 @@
+//img selection
 const imgs = document.querySelectorAll(".img a");
 //console.log(imgs)
 let imgId = 1;
 
 const imgdiv = document.querySelectorAll(".img");
-//console.log(para);
-
 imgs.forEach((img)=>{
     img.addEventListener('click',(e)=>{
         e.preventDefault();
@@ -21,12 +20,11 @@ imgs.forEach((img)=>{
 function moveImage()
 {
   const imgWidth=document.querySelector('.main-image img:first-child').clientWidth;
-  let width=((imgId-1)*imgWidth);
- 
+  let width=((imgId-1)*imgWidth); 
 document.querySelector('.main-image').style.transform=`translateX(${-width}px)`;
 }
 
-
+//Rate for star
 const stars = document.querySelectorAll(".star");
 const  paraRate= document.querySelector("#para");
 
@@ -47,3 +45,5 @@ stars.forEach((star,index)=>{
   })
   })
 })
+
+

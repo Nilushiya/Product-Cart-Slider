@@ -10,7 +10,7 @@
 body{
   width: 100vw;
   height: 100vh;
-  background-color: #efeff0;
+  background-color: #b3b3dd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@ body{
 
  /* card right*/
 .card-right{
-  padding: 10px;
+  padding-left: 20px;
 }
 .card-right h2{
   font-weight: 400;
@@ -92,6 +92,7 @@ body{
 }
 .star{
   border: none;
+  background-color: #b3b3dd;
   font-size: 30px;
   color: gold;
 }
@@ -101,7 +102,6 @@ body{
   left: 5px;
 }
 .card-right h4{
-  margin-top: 20px;
   font-size: 18px;
   font-weight: 500;
 }
@@ -114,13 +114,16 @@ body{
 .card-right p{
   margin: 10px 0;
   color:rgba(0,0,0,0.5);
-  padding:7px 0 ;
+  padding:3px 0 ;
+}
+.card-right ul{
+  padding: 15px;
 }
 .form{
   display: flex;
   justify-content: space-between;
   width: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .form-group label,
 .form-group select
