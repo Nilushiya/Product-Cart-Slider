@@ -3,8 +3,6 @@ const imgs = document.querySelectorAll(".img a");
 let imgId = 1;
 
 const imgdiv = document.querySelectorAll(".img");
-const stars = document.querySelectorAll(".star1");
-const  para= document.querySelector("#para");
 //console.log(para);
 
 imgs.forEach((img)=>{
@@ -27,7 +25,25 @@ function moveImage()
  
 document.querySelector('.main-image').style.transform=`translateX(${-width}px)`;
 }
-console.log(stars)
 
-let int = stars.indexOf("button.star1")
-console.log(int);
+
+const stars = document.querySelectorAll(".star");
+const  paraRate= document.querySelector("#para");
+
+stars.forEach((star,index)=>{
+    
+  star.addEventListener('click',()=>{
+      
+      let current_star = index+1
+      paraRate.innerText = `${current_star} of 5`
+
+      stars.forEach((star,i)=>{
+          if(current_star >= i+1){
+              star.innerHTML = `&#9733`;
+          }
+          else{
+              star.innerHTML = `&#9734;`
+          }
+  })
+  })
+})
